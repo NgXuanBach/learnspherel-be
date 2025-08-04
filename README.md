@@ -61,10 +61,10 @@ Create a `.env` or configure `application.properties` for:
 | Method | Endpoint             | Description                          |
 |--------|----------------------|--------------------------------------|
 | POST   | /api/auth/login      | User login                           |
-| POST   | /api/users           | Create new user                      |
-| GET    | /api/courses         | Get all courses                      |
-| POST   | /api/courses         | Create a course (Instructor only)    |
-| GET    | /api/users/me        | Get current user info                |
+| GET    | /api/auth/me         | Get current user info                |
+| POST   | /api/register        | Create new user                      |
+| GET    | /api/khoa-hoc        | Get all courses                      |
+| POST   | /api/khoa-hoc        | Create a course (Instructor only)    |
 | ...    |                      | (More endpoints in progress)         |
 
 ## 📄 License
