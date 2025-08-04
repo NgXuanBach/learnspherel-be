@@ -23,13 +23,16 @@ This is the backend system for **LearnSphereL**, a personalized e-learning platf
 - Lombok, Logger
 
 ## 📦 Project Structure
+
+```
 learnspherel-be/
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ └── resources/
+│   ├── main/
+│   │   ├── java/
+│   │   └── resources/
 ├── pom.xml
 └── README.md
+```
 
 ## 🚀 Getting Started
 
@@ -45,4 +48,25 @@ learnspherel-be/
 git clone https://github.com/yourusername/learnspherel-be.git
 cd learnspherel-be
 ./mvnw spring-boot:run
+```
 
+### Environment variables
+Create a `.env` or configure `application.properties` for:
+- Database credentials
+- JWT secret
+- Port, context-path, etc.
+
+## 🧪 API Overview
+
+| Method | Endpoint             | Description                          |
+|--------|----------------------|--------------------------------------|
+| POST   | /api/auth/login      | User login                           |
+| POST   | /api/users           | Create new user                      |
+| GET    | /api/courses         | Get all courses                      |
+| POST   | /api/courses         | Create a course (Instructor only)    |
+| GET    | /api/users/me        | Get current user info                |
+| ...    |                      | (More endpoints in progress)         |
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
